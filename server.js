@@ -33,7 +33,10 @@ app.post('/contact/send-message', upload.single('file'), (req, res) => {
   }
 });
 
-app.get('/', (req, res) => {
+app.get('/home', (req, res) => {
+  res.render('index');
+});
+app.get('/',(req,res) => {
   res.render('index');
 });
 
